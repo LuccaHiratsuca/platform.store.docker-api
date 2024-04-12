@@ -110,7 +110,7 @@ services:
     build:
       context: ../platform.tech-emporium.product-resource/
       dockerfile: Dockerfile
-    image: product-resource:latest
+    image: store-product:latest
     environment:
       - spring.datasource.url=jdbc:postgresql://store-db-store:5432/store
       - spring.datasource.username=store
@@ -130,7 +130,7 @@ services:
     build:
       context: ../platform.tech-emporium.order-resource/
       dockerfile: Dockerfile
-    image: order-resource:latest
+    image: store-order:latest
     environment:
       - spring.datasource.url=jdbc:postgresql://store-db-store:5432/store
       - spring.datasource.username=store
