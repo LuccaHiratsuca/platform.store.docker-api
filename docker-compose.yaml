@@ -119,7 +119,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-    restart: always
+    # restart: always
     networks:
       - private-network
     depends_on:
@@ -139,7 +139,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-    restart: always
+    # restart: always
     networks:
       - private-network
     depends_on:
